@@ -1,0 +1,49 @@
+body{
+    /* background-color:#f1f178; */
+    background-image: url("htmlimage.png");
+}
+h1{
+    color:rgb(19, 5, 2);
+    text-align: center;
+    opacity: 1.0;
+}
+button{
+    border-style: double;
+    font-size: 17px;
+    border-radius: 50px;
+    cursor:pointer;
+    padding:4px 6px 4px 6px;
+}
+button:hover{
+    background-color: #00ff00;
+}
+#newarr{
+    margin-right: 200px;
+}
+#bubble,#selection,#merge{
+    margin-right: 10px;
+}
+#size,#speed{
+    margin-right: 200px;
+}
+#bar{
+    color:red;
+    display:flex;
+    justify-content: center;
+    height:400px;
+    flex-direction: row;
+    padding: 20px 30px 0px 10px;
+}
+.baritem{
+    background: rgb(14, 14, 13);
+    border: 1px solid rgb(231, 245, 153);
+    width: 0.75%;
+}
+a{
+    text-decoration: none;
+    color:aqua;
+}
+h1:hover{
+    color:rgb(31, 12, 99);
+    opacity:0.5;
+}
