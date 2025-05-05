@@ -1,39 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorting Visualizer</title>
-    <link rel="stylesheet" href="sorting.css">
-    <style>
-        label{
-            color: rgb(26, 20, 20);
-            font-size:larger;
-        }
-    </style>
-</head>
-
 <body>
     <h1>Sorting Visualizer</h1>
-    <button id="newarr"><b>New Array</b></button>&nbsp;&nbsp;
 
-    <label for="sizer">Size:</label>
-    <input id="sizer" type="range" min=20 max=60 step=1 value=20>&nbsp;&nbsp;
+    <div class="controls">
+        <button id="newarr"><b>New Array</b></button>
 
+        <label for="sizer">Size:</label>
+        <input id="sizer" type="range" min="20" max="60" step="1" value="20">
 
-    <label for="speed">Speed:</label>
-    <input id="speed" type="range" min=20 max=240 step=1 value=20>&nbsp;&nbsp;
+        <label for="speed">Speed:</label>
+        <input id="speed" type="range" min="20" max="240" step="1" value="20">
 
+        <button id="bubble"><b>Bubble Sort</b></button>
+        <button id="selection"><b>Selection Sort</b></button>
+    </div>
 
-
-    <button id="bubble"><b>Bubble Sort</b></button>
-     
-    <button id="selection"><b>Selection Sort</b></button> 
     <div id="bar"></div>
 
+    <script src="sorting.js"></script>
+    <script src="bubble.js"></script>
+    <script src="selection.js"></script>
 </body>
-<script src="sorting.js"></script>
-<script src="bubble.js"></script>
-<script src="selection.js"></script>
-</html>
