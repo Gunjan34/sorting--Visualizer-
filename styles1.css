@@ -1,47 +1,82 @@
 body {
+    background-image: url("htmlimage.png");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #c28e8e;
-}
-
-.container {
-    text-align: center;
-}
-
-.content {
-    max-width: 600px;
-    margin: 0 auto;
+    padding: 10px;
 }
 
 h1 {
-    margin-bottom: 30px;
+    text-align: center;
+    color: rgb(19, 5, 2);
 }
 
-h2 {
-    margin-top: 30px;
-}
-
-p {
-    line-height: 1.5;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 30px;
-    font-size: 16px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #3498db;
-    border: none;
-    border-radius: 4px;
+button {
+    border-style: double;
+    font-size: 1rem;
+    border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    padding: 8px 12px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #2980b9;
+button:hover {
+    background-color: #00ff00;
+}
+
+#bar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.baritem {
+    background: rgb(14, 14, 13);
+    border: 1px solid rgb(231, 245, 153);
+    width: 10px;
+    margin: 0 1px;
+    transition: height 0.3s;
+}
+
+input[type="range"] {
+    width: 150px;
+    margin: 0 10px;
+}
+
+label {
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+/* Responsive controls */
+@media (max-width: 768px) {
+    button, label, input[type="range"] {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    #bar {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .baritem {
+        width: 6px;
+    }
 }
