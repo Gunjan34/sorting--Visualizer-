@@ -25,6 +25,7 @@ A dynamic and interactive **Sorting Algorithm Visualizer** built with **HTML, CS
 > 💻 [Live Demo Link] ( https://gunjan34.github.io/sorting--Visualizer-/)
 
 🛠️ Technologies Used
+
 HTML5
 
 CSS3
